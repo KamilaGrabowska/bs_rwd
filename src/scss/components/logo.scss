@@ -1,0 +1,14 @@
+@import "../variables";
+@import "../untils/functions";
+
+.logo{
+  font-size: px-to-rem(32px);
+  font-family: "Ralway",sans-serif;
+  padding-top: px-to-rem(29px);
+  padding-bottom: px-to-rem(16px);
+  font-weight: 300;
+  display: inline-block;
+  color: rgba(8, 166, 228, 1);
+  text-decoration: none;
+
+}
