@@ -1,12 +1,19 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "./variables";
 
+html, body {
+  font-size: $base-font-size;
+}
 
 //@import "./typography/fonts";
+@import "./global";
 @import "./media_gueries";
 
 // layout
 @import "./components/layout/header";
+//@import "../../src/scss/components/layout/staticstic_section";
+
+
 
 // components
 @import "./components/logo";
@@ -14,3 +21,6 @@
 @import "./components/hamburger";
 
 @import "./untils/mixin";
+
+
+//@import "../../src/scss/components/statistics_bar";
