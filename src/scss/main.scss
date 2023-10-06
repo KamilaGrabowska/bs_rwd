@@ -3,7 +3,7 @@
 
 
 //@import "./typography/fonts";
-//@import "./media_queries";
+@import "./media_gueries";
 
 // layout
 @import "./components/layout/header";
@@ -12,3 +12,5 @@
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/hamburger";
+
+@import "./untils/mixin";
