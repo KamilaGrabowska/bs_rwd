@@ -279,6 +279,18 @@ html, body {
   font-weight: 400;
 }
 
+.benefits {
+  flex-direction: nowrap;
+  background-color: #f7f7f7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.benefits__inner {
+  max-width: 19.625rem;
+}
+
 .logo {
   color: #08a6e4;
   padding-top: 1.8125rem;
@@ -459,6 +471,58 @@ html, body {
   font-size: 1.0625rem;
   font-weight: 400;
   display: flex;
+  position: relative;
+}
+
+.box {
+  background-color: #fff;
+  border: .0625rem solid #e8e9ed;
+  border-radius: .3125rem;
+  margin-top: 2.5625rem;
+  margin-bottom: 0;
+}
+
+.box:first-child, .box:nth-child(2) {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+.box:last-child {
+  margin-bottom: 2.79125rem;
+}
+
+.box .title__hdl {
+  color: #000;
+  margin-top: 1.625rem;
+  margin-bottom: 0;
+  margin-inline: 1.3125rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.box .title__dsc {
+  color: #000;
+  margin-top: .625rem;
+  margin-bottom: 1.875rem;
+  margin-inline: 1.3125rem;
+  font-family: Open Sans, sans-serif;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.box .graph__img--last {
+  position: absolute;
+  top: 1.875rem;
+  left: -.75rem;
+}
+
+.box .graph--desc {
+  background-color: #55dfb4;
+  border: .0625rem solid #e8e9ed;
+  border-radius: .3125rem;
+  width: 100%;
+  height: 12.1875rem;
   position: relative;
 }
 

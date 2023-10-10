@@ -1,0 +1,68 @@
+@import "../variables";
+@import "../untils/functions";
+@import "../untils/mixin";
+
+.box {
+  background-color: $btn-color;
+  border-radius: px-to-rem(5px);
+  border: px-to-rem(1px) solid #E8E9ED;
+  margin-top: px-to-rem(41px);
+  margin-bottom: 0;
+  &:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &:last-child {
+    margin-bottom: px-to-rem(44.66px);
+  }
+
+
+  .title {
+    &__hdl {
+      font-family: 'Raleway', sans-serif;
+      font-size: px-to-rem(30px);
+      font-weight: 400;
+      color: $font-color;
+      margin-top: px-to-rem(26px);
+      margin-bottom: 0;
+      margin-inline: px-to-rem(21px);
+    }
+    &__dsc {
+      font-family: 'Open Sans', sans-serif;
+      font-size: px-to-rem(14px);
+      font-weight: 400;
+      color: $font-color;
+      margin-top: px-to-rem(10px);
+      margin-bottom: px-to-rem(30px);
+      margin-inline: px-to-rem(21px);
+    }
+  }
+  .graph {
+    &__img {
+
+      &--last{
+        position: absolute;
+        top: px-to-rem(30px);
+        left: px-to-rem(-12px);
+      }
+    }
+    &__shape {
+      &--red {}
+      &--blue {}
+      &--green {
+      }
+    }
+    &--desc {
+      background-color: $green-color;
+      height: px-to-rem(195px);
+      position: relative;
+      width: 100%;
+      border-radius: px-to-rem(5px);
+      border: px-to-rem(1px) solid #E8E9ED;
+    }
+  }
+}
