@@ -5,7 +5,7 @@
 .box {
   background-color: $btn-color;
   border-radius: px-to-rem(5px);
-  border: px-to-rem(1px) solid #E8E9ED;
+  border: px-to-rem(1px) solid $light-grey-color;
   margin-top: px-to-rem(41px);
   margin-bottom: 0;
   &:first-child {
@@ -42,27 +42,67 @@
     }
   }
   .graph {
-    &__img {
+    display: flex;
+    position: relative;
 
-      &--last{
-        position: absolute;
-        top: px-to-rem(30px);
-        left: px-to-rem(-12px);
-      }
-    }
-    &__shape {
-      &--red {}
-      &--blue {}
-      &--green {
-      }
-    }
     &--desc {
       background-color: $green-color;
       height: px-to-rem(195px);
       position: relative;
       width: 100%;
       border-radius: px-to-rem(5px);
-      border: px-to-rem(1px) solid #E8E9ED;
+      border: px-to-rem(1px) solid $light-grey-color;
     }
+
+    &__img {
+      padding-top: px-to-rem(37.11px);
+      z-index: 42;
+
+      &--first{
+        display: inline-block;
+        margin-inline: px-to-rem(55.27px);
+      }
+
+      &--second{
+        margin-left: px-to-rem(90px);
+       margin-top: px-to-rem(-19px);
+      }
+
+      &--third{
+        position: absolute;
+        left: px-to-rem(-12px);
+      }
+    }
+    &__shape {
+
+
+      &--red {
+        width: px-to-rem(90px);
+        height: px-to-rem(90px);
+        background-color: $red-color;
+        border-radius: 45%;
+        transform: rotate(45deg);
+        position: absolute;
+        top: px-to-rem(18.5px);
+        left: px-to-rem(161.5px);
+
+
+
+      }
+      &--blue {
+        position: absolute;
+        width: px-to-rem(135px);
+        height: px-to-rem(132px);
+        background-color:$base-color ;
+        border-radius: 50%;
+        top:px-to-rem(12px);
+        left: px-to-rem(90px);
+
+      }
+
+
+      &--green {}
+    }
+
   }
 }
