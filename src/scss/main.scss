@@ -11,7 +11,7 @@ html, body {
 
 // layout
 @import "./components/layout/header";
-//@import "../../src/scss/components/layout/staticstic_section";
+@import "../../src/scss/components/layout/staticstic_section";
 
 
 
@@ -19,8 +19,5 @@ html, body {
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/hamburger";
-
 @import "./untils/mixin";
-
-
-//@import "../../src/scss/components/statistics_bar";
+@import "../../src/scss/components/statistics_bar";
