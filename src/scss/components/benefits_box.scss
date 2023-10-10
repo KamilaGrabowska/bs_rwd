@@ -8,6 +8,7 @@
   border: px-to-rem(1px) solid $light-grey-color;
   margin-top: px-to-rem(41px);
   margin-bottom: 0;
+
   &:first-child {
     display: flex;
     flex-direction: column-reverse;
