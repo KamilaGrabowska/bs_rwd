@@ -317,6 +317,16 @@ html, body {
   display: flex;
 }
 
+.questions__inner {
+  flex-direction: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 19.75rem;
+  margin-inline: auto;
+  display: flex;
+}
+
 .logo {
   color: #08a6e4;
   padding-top: 1.8125rem;
@@ -706,6 +716,58 @@ html, body {
 
 .pricing__boxes .frame__btn--green {
   background-color: #55dfb4;
+}
+
+.contact__hdl {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Raleway\, Regular, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.contact__dsc {
+  color: #000;
+  height: 2.8125rem;
+  margin-top: .3125rem;
+  margin-bottom: .9375rem;
+  font-family: Open Sans\, Regular, sans-serif;
+  font-weight: 400;
+}
+
+.contact .info .inner {
+  flex-direction: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: .9375rem;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.contact .info .inner__img {
+  margin-top: 0;
+  margin-right: .480625rem;
+}
+
+.contact .info .inner__dsc {
+  margin-top: .95625rem;
+}
+
+.form {
+  flex-direction: column;
+  display: flex;
+}
+
+.form .check {
+  flex-direction: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.form .check__dsc {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

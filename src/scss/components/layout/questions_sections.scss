@@ -1,0 +1,12 @@
+@import "../../variables";
+@import "../../untils/functions";
+@import "../../untils/mixin";
+
+.questions{
+  &__inner{
+    max-width: px-to-rem(316px);
+    margin-inline: auto;
+    @include flex(center, flex-start);
+    flex-direction: column;
+  }
+}

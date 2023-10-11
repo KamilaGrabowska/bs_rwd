@@ -1,0 +1,64 @@
+@import "../variables";
+@import "../untils/functions";
+@import "../untils/mixin";
+
+.contact {
+  &__hdl {
+    font-size: px-to-rem(40px);
+    font-family: "Raleway, Regular",sans-serif;
+    font-weight: 400;
+    color: $font-color;
+    margin-bottom: 0;
+    margin-top: 0;
+
+
+  }
+  &__dsc {
+    font-family: "Open Sans, Regular",sans-serif;
+    font-weight: 400;
+    color: $font-color;
+    margin-bottom: px-to-rem(15px) ;
+    margin-top: px-to-rem(5px);
+    height: px-to-rem(45px);
+  }
+  .info {
+
+
+    .inner {
+      @include flex(flex-start, center);
+      margin-bottom: 0;
+      max-height: px-to-rem(15px);
+
+
+      &__img {
+       margin-right: px-to-rem(7.69px);
+       margin-top: px-to-rem(0px);
+
+      }
+
+      &__dsc {
+        margin-top: px-to-rem(15.3px);
+
+
+        }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  &__label {}
+  &__in {
+  }
+  .check {
+    @include flex(center, flex-start);
+    &__form {}
+    &__dsc {
+      margin-top: 0;
+    }
+  }
+  &__btn {}
+}
+
+
