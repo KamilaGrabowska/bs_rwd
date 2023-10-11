@@ -317,6 +317,53 @@ html, body {
   display: flex;
 }
 
+.footer {
+  margin-top: 2.75rem;
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer__inner {
+  max-width: calc(100% - 34px);
+  margin-inline: auto;
+  display: flex;
+}
+
+.footer__inner .best {
+  justify-content: cneter;
+  flex-direction: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer__inner .best__logo {
+  color: #08a6e4;
+  margin-top: 1.405rem;
+  margin-bottom: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 1.625rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer__inner .best__copy {
+  color: #a5a5a5;
+  margin-top: .0325rem;
+  margin-bottom: 1.3125rem;
+  margin-right: 1.625rem;
+  font-family: Open Sans, sans-serif;
+  font-size: .6875rem;
+  font-weight: 400;
+}
+
+.footer__inner .icons {
+  flex-direction: row;
+  flex-direction: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
 .logo {
   color: #08a6e4;
   padding-top: 1.8125rem;
