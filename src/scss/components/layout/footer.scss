@@ -35,11 +35,11 @@
       }
     }
   .icons{
-    flex-direction: row;
-    @include flex(flex-end, center);
+    display: flex;
+    align-items: center;
 
     &__icon{
-
+    margin-inline: px-to-rem(10px);
 
     }
   }

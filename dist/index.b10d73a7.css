@@ -357,11 +357,12 @@ html, body {
 }
 
 .footer__inner .icons {
-  flex-direction: row;
-  flex-direction: nowrap;
-  justify-content: flex-end;
   align-items: center;
   display: flex;
+}
+
+.footer__inner .icons__icon {
+  margin-inline: .625rem;
 }
 
 .logo {
