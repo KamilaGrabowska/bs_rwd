@@ -722,7 +722,7 @@ html, body {
   color: #000;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Raleway\, Regular, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -732,7 +732,7 @@ html, body {
   height: 2.8125rem;
   margin-top: .3125rem;
   margin-bottom: .9375rem;
-  font-family: Open Sans\, Regular, sans-serif;
+  font-family: Open Sans, sans-serif;
   font-weight: 400;
 }
 
@@ -766,6 +766,7 @@ html, body {
   color: #08a6e4;
   letter-spacing: .205rem;
   margin-top: 2.3125rem;
+  margin-bottom: 0;
   font-family:  Open Sans, sans-serif;
   font-size: .6875rem;
   font-weight: 700;
@@ -773,7 +774,7 @@ html, body {
 
 .form__in {
   border: none;
-  border-bottom: 1px solid #95989a;
+  border-bottom: .0625rem solid #95989a;
   height: 2.62375rem;
 }
 
@@ -786,9 +787,9 @@ html, body {
 }
 
 .form .check__form {
-  border: .0625rem solid #95989a;
+  border: 1px solid #95989a;
   border-radius: .25rem;
-  width: .875rem;
+  width: 1.5rem;
   height: 1.5rem;
   margin-top: 1.9375rem;
   padding: .6875rem;
@@ -805,9 +806,14 @@ html, body {
   left: .3125rem;
 }
 
+.form .check__form--img:hover {
+  opacity: 1;
+}
+
 .form .check__dsc {
   color: #707070;
   margin-top: 1.9375rem;
+  margin-bottom: 0;
   margin-left: 2.125rem;
   font-family: Open Sans, sans-serif;
   font-size: .75rem;
