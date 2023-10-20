@@ -1,28 +1,11 @@
-// const formRefs = document.querySelectorAll('.calc__form');
-// const itemRefs = [...document.querySelectorAll('.list__item')];
-// console.log(itemRefs)
-
-// formRefs.forEach((ref) =>{
-//     ref.addEventListener("click", (event) => {
-//         let target = event.target;
-//
-//
-//         if (target === ref.children[0].children[0]) {
-//             let value = ref.children[0].children[0].value;
-//             itemRefs[0].classList.add('open');
-//             itemRefs[0].children[1].textContent = `${value} * $0.5`
-//         } else if (target === ref.children[1].children[0]) {
-//             itemRefs[1].classList.add('open');
-//         } else if (target === ref.children[3].children[0]) {
-//             itemRefs[3].classList.add('open');
-//         } else if (target === ref.children[4].children[0]) {
-//             itemRefs[4].classList.add('open')
-// }
-//     })
-// })
-
 const formRefs = document.querySelector('.calc__form');
-const itemRefs = document.querySelectorAll('.list__item');
+const selectRef = document.getElementById('package');
+const dropdownRef = document.querySelector('.calc__select');
+const itemsRefs = [...document.querySelectorAll('.select__dropdown li')];
+
+console.log(dropdownRef);
+
+
 
 formRefs.addEventListener("input", (event) => {
     const target = event.target;
@@ -50,14 +33,18 @@ formRefs.addEventListener("input", (event) => {
     }
 });
 
+selectRef.addEventListener('click', () => {
+    dropdownRef.classList.toggle('open');
+    console.log(dropdownRef)
 
+}, false);
 
+itemsRefs.forEach((item) => {
 
+    item.addEventListener('click', (event) => {
+        const target = event.target;
+        console.log(item)
+        document.querySelector("[data-id='package']").classList.toggle('open');
 
-
-
-
-
-
-
-
+    }, true)
+})
