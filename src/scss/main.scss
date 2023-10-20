@@ -9,6 +9,7 @@ html, body {
 @import "./global";
 @import "./media_gueries";
 
+
 // layout
 @import "./components/layout/header";
 @import "../../src/scss/components/layout/staticstic_section";
@@ -29,3 +30,4 @@ html, body {
 @import "../../src/scss/components/pricing_box";
 @import "../../src/scss/components/questions_form";
 @import "../../src/scss/components/menu_bar";
+@import "../../src/scss/components/calculator";
