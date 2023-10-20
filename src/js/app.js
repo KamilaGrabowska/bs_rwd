@@ -45,12 +45,8 @@ formRefs.addEventListener("input", (event) => {
         orders.querySelector('.item__price').textContent = `$${price}`;
     } else if (target.id === 'accounting') {
         accounting.classList.toggle('open');
-        const value = parseFloat(target.value) || 0;
-        const price = value * 0.5;
-        accounting.querySelector('.item__calc').textContent = `${value} * $0.5`;
-        accounting.querySelector('.item__price').textContent = `$${price}`;
-    }else if (target.id === 'terminal') {
-        accounting.classList.toggle('open');
+    } else if (target.id === 'terminal') {
+        terminal.classList.toggle('open');
     }
 });
 
